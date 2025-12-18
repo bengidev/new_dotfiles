@@ -75,7 +75,15 @@ return {
       -- DAP (Debug Adapter Protocol) integration
       dap = {
         -- Set to true if nvim-dap is installed
-        enabled = false,
+        enabled = true,
+      },
+
+      -- Integration settings
+      integrations = {
+        nvim_tree = {
+          enabled = true,
+          guess_target = true,
+        },
       },
     })
 

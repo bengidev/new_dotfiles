@@ -10,6 +10,7 @@ A modern Neovim configuration built on **LazyVim** with features from [jdhao/nvi
 - **Git integration** with fugitive, gitsigns, and diffview
 - **Modern code folding** with nvim-ufo
 - **LSP support** with auto-completion
+- **iOS/macOS development** with xcodebuild.nvim
 - **Beautiful UI** with lualine, bufferline, and multiple colorschemes
 
 ## 📦 Requirements
@@ -116,6 +117,8 @@ nvim
 
 | Keymap | Description |
 |--------|-------------|
+| `<C-j>` | Scroll down (half page) |
+| `<C-k>` | Scroll up (half page) |
 | `<Space>t` | Toggle Vista (tags sidebar) |
 | `<leader>hw` | Hop to word |
 | `<leader>hl` | Hop to line |
@@ -183,6 +186,24 @@ nvim
 | `cia` | Change inside argument |
 | `ci)` | Change inside next parentheses |
 
+###  Xcode Development (xcodebuild.nvim)
+
+| Keymap | Description |
+|--------|-------------|
+| `<leader>xp` | Picker (all actions) |
+| `<leader>xb` | Build project |
+| `<leader>xr` | Build & Run |
+| `<leader>xt` | Run all tests |
+| `<leader>xT` | Test nearest |
+| `<leader>xd` | Debug |
+| `<leader>xs` | Select scheme |
+| `<leader>xD` | Select device |
+| `<leader>xl` | Toggle logs |
+| `<leader>xc` | Toggle coverage |
+| `<leader>xe` | Toggle test explorer |
+| `<leader>xS` | Setup project |
+| `<leader>xC` | Clean |
+
 ## 🎨 Colorschemes
 
 Switch colorschemes with `:colorscheme <name>`:
@@ -247,6 +268,7 @@ Switch colorschemes with `:colorscheme <name>`:
         ├── vim-sandwich.lua # Surround operations
         ├── vista.lua        # Tags sidebar
         ├── whitespace.lua   # Trailing whitespace
+        ├── xcodebuild.lua   # iOS/macOS development
         └── yanky.lua        # Yank history
 ```
 

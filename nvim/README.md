@@ -204,6 +204,57 @@ nvim
 | `<leader>xS` | Setup project |
 | `<leader>xC` | Clean |
 
+### 🐛 Debugging (nvim-dap)
+
+| Keymap | Description |
+|--------|-------------|
+| `<leader>dd` | Build & Debug |
+| `<leader>dr` | Debug without building |
+| `<leader>dt` | Debug tests |
+| `<leader>dT` | Debug class tests |
+| `<leader>b` | Toggle breakpoint |
+| `<leader>B` | Toggle message breakpoint |
+| `<leader>dx` | Terminate debugger |
+| `<leader>du` | Toggle DAP UI |
+
+### 🚦 Trouble (Diagnostics)
+
+| Keymap | Description |
+|--------|-------------|
+| `<leader>tt` | Toggle Trouble quickfix |
+| `<leader>td` | Toggle Trouble diagnostics |
+| `<A-d>` | Jump to next issue |
+| `<A-s>` | Jump to previous issue |
+
+### 🖥️ Tmux Integration
+
+> **Note:** Prefix key is `Ctrl+a` (not the default Ctrl+b)
+
+**Splitting Panes:**
+| Keymap | Description |
+|--------|-------------|
+| `Ctrl+a \|` | Vertical split (side by side) |
+| `Ctrl+a -` | Horizontal split (top/bottom) |
+| `Ctrl+a v` | Vertical split (shortcut) |
+| `Ctrl+a s` | Horizontal split (shortcut) |
+
+**Navigation (works in both tmux AND Neovim!):**
+| Keymap | Description |
+|--------|-------------|
+| `Ctrl+h` | Move left |
+| `Ctrl+j` | Move down |
+| `Ctrl+k` | Move up |
+| `Ctrl+l` | Move right |
+
+**Window & Pane Management:**
+| Keymap | Description |
+|--------|-------------|
+| `Ctrl+a c` | New window |
+| `Ctrl+a x` | Close pane |
+| `Ctrl+a X` | Close window |
+| `Ctrl+a r` | Reload config |
+| `Alt+1/2/3...` | Switch to window 1/2/3... |
+
 ## 🎨 Colorschemes
 
 Switch colorschemes with `:colorscheme <name>`:

@@ -47,6 +47,10 @@ keymap("n", "gb", function()
   end
 end, { desc = "Go to buffer [count] or next" })
 
+-- Scroll up/down
+keymap("n", "<C-j>", "<C-d>", { desc = "Scroll down" })
+keymap("n", "<C-k>", "<C-u>", { desc = "Scroll up" })
+
 -- Edit nvim config
 keymap("n", "<leader>ev", "<cmd>tabedit $MYVIMRC<cr>", { desc = "Edit nvim config" })
 -- Reload nvim config

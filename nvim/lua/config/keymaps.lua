@@ -59,11 +59,11 @@ keymap("n", "<leader>sv", "<cmd>source $MYVIMRC<cr>", { desc = "Reload nvim conf
 --------------------------------------------------------------------------------
 -- Window Management
 --------------------------------------------------------------------------------
--- Window resizing with Ctrl+Arrow keys
-keymap("n", "<C-Up>", "<cmd>resize +2<cr>", { desc = "Increase window height" })
-keymap("n", "<C-Down>", "<cmd>resize -2<cr>", { desc = "Decrease window height" })
-keymap("n", "<C-Left>", "<cmd>vertical resize -2<cr>", { desc = "Decrease window width" })
-keymap("n", "<C-Right>", "<cmd>vertical resize +2<cr>", { desc = "Increase window width" })
+-- Window resizing with Alt+Arrow keys (Option+Arrow on Mac)
+keymap("n", "<A-Up>", "<cmd>resize +2<cr>", { desc = "Increase window height" })
+keymap("n", "<A-Down>", "<cmd>resize -2<cr>", { desc = "Decrease window height" })
+keymap("n", "<A-Left>", "<cmd>vertical resize -2<cr>", { desc = "Decrease window width" })
+keymap("n", "<A-Right>", "<cmd>vertical resize +2<cr>", { desc = "Increase window width" })
 -- Toggle cursor column
 keymap("n", "<leader>cl", "<cmd>set cursorcolumn!<cr>", { desc = "Toggle cursor column" })
 -- Change current working directory to buffer's directory

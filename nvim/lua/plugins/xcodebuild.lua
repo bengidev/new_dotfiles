@@ -33,6 +33,7 @@ return {
     "MunifTanjim/nui.nvim",
     "nvim-tree/nvim-tree.lua", -- optional: manage project files
     "nvim-treesitter/nvim-treesitter", -- for Quick tests support
+    "nvim-telescope/telescope.nvim", -- for picker integration
   },
   -- Only load on macOS
   enabled = function()
@@ -83,6 +84,16 @@ return {
         nvim_tree = {
           enabled = true,
           guess_target = true,
+        },
+        snacks_nvim = {
+          enabled = false, -- Use Telescope instead
+        },
+        -- Disabled due to bug #401 in xcodebuild.nvim:
+        -- pymobiledevice3 command syntax changed, causing "Attempt to decode a blank string" error
+        -- Re-enable when the plugin is updated with a fix
+        -- See: https://github.com/wojciech-kulik/xcodebuild.nvim/issues/401
+        pymobiledevice = {
+          enabled = false,
         },
       },
     })
